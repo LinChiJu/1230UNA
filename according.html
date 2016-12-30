@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+    </script>
+        <script>
+          $(document).ready(function(){
+            $("p").toggle();  
+             $("h1").click(function(){
+               /* $("p").slideToggle(1000);*/
+                /*this=h next+p(下一個元素)*/
+                $(this).next().slideToggle(1000);
+                 });
+              });
+            
+            /*手風琴選單
+            $(document).ready(function(){
+            $("p").hide();  
+             $("h1").hover(function(){
+                $(this).next().stop().slideToggle(1000);
+                 });
+              });*/
+         </script>
+    <style>
+        /*.h1,h2,h3,p{margin: none;}*/
+        h1{cursor: pointer;}
+        .container{
+            width:600px;
+            margin: auto;
+        }
+        /*P{display:none;}*/
+    </style>
+</head>
+<body>
+    <div>
+        <h1>JYFUJBI</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ut nihil minima nostrum mollitia vitae quisquam explicabo culpa sed, vero modi dolores est, ipsam enim aspernatur magnam architecto perspiciatis ipsum?</p><h1>JYFUJBI</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ut nihil minima nostrum mollitia vitae quisquam explicabo culpa sed, vero modi dolores est, ipsam enim aspernatur magnam architecto perspiciatis ipsum?</p><h1>JYFUJBI</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora ut nihil minima nostrum mollitia vitae quisquam explicabo culpa sed, vero modi dolores est, ipsam enim aspernatur magnam architecto perspiciatis ipsum?</p>
+    </div>
+   
+</body>   
+   
+</html>
